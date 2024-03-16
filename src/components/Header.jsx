@@ -35,7 +35,7 @@ const Header = () => {
           {" "}
           View plans
         </li>
-        <li className="absolute bottom-0 right-0 w-full !p-0">
+        <li className="absolute md:hidden bottom-0 right-0 w-full !p-0">
           <img className=" w-[375px] h-[218px]" src={navpatten} alt="navpatten" />
         </li>
       </ul>
