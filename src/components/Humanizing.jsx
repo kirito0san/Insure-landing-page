@@ -1,11 +1,11 @@
-import MainImageM from "../assets/images/image-intro-mobile.jpg";
-import MainImageP from "../assets/images/image-intro-desktop.jpg";
+import MainImageM from "../assets/images/image-intro-mobile.webp";
+import MainImageP from "../assets/images/image-intro-desktop.webp";
 import patternM from "../assets/images/bg-pattern-intro-right-mobile.svg";
 import patternLM from "../assets/images/bg-pattern-intro-left-mobile.svg";
 
 const Humanizing = () => {
   return (
-    <div className="flex  flex-col-reverse mx-auto md:py-10 md:pb-[200px] md:flex-row text-Very-Light-Gray max-w-7xl">
+    <div className="flex  flex-col-reverse mx-auto md:py-10 md:pb-[200px]  md:flex-row text-Very-Light-Gray max-w-7xl">
       <div className="relative flex flex-col  items-center px-2 text-center py-[80px] md:py-5 md:items-start md:text-start md:px-10">
         <img className="absolute top-[65%] right-0 md:hidden " src={patternM} alt="patternM" />
         <img className="absolute top-[0] -left-0 md:hidden" src={patternLM} alt="patternLM" />
@@ -22,8 +22,12 @@ const Humanizing = () => {
           View plans
         </button>
       </div>
-      <img className="hidden md:block" src={MainImageP} alt="MainImageP" />
-      <img className="w-full h-[451px] max-h-[500px] md:hidden" src={MainImageM} alt="MainImageM" />
+      <img className="w-[540px] h-[650px] hidden md:block" src={MainImageP} alt="MainImageP" />
+      <img
+        className="w-[375px] self-center h-[451px] md:hidden"
+        src={MainImageM}
+        alt="MainImageM"
+      />
     </div>
   );
 };
