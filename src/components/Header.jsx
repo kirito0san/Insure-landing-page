@@ -6,7 +6,7 @@ const Header = () => {
   const [open, setopen] = useState(false);
   return (
     <header className="flex items-center justify-between p-5 px-10 mx-auto max-w-7xl">
-      <img className="w-[118px] h-[12px]" src={Logo} alt="logo" />
+      <img className="w-[112px] h-[18px]" src={Logo} alt="logo" />
       <img
         onClick={() => setopen(!open)}
         className="cursor-pointer w-[32px] h-[32px] md:hidden"

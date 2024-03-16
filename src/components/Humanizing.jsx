@@ -1,5 +1,5 @@
-import MainImageM from "../assets/images/image-intro-mobile.webp";
-import MainImageP from "../assets/images/image-intro-desktop.webp";
+import MainImageM from "../assets/images/image-intro-mobile.jpg";
+import MainImageP from "../assets/images/image-intro-desktop.jpg";
 import patternM from "../assets/images/bg-pattern-intro-right-mobile.svg";
 import patternLM from "../assets/images/bg-pattern-intro-left-mobile.svg";
 

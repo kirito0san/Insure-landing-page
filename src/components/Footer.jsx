@@ -13,7 +13,7 @@ const Footer = () => {
       <img className="absolute top-0 left-0 md:hidden" src={FooterPatternM} alt="" />
       <div className="flex flex-col px-10 mx-auto max-w-7xl">
         <div className="z-10 flex flex-col items-center justify-between gap-8 pb-5 border-b md:flex-row">
-          <img className="w-[112px] h-[18px]" src={Logo} alt="logo" />
+          <img className="w-[118px] h-[12px]" src={Logo} alt="logo" />
           <div className="flex gap-3 social">
             <img className="w-[24px] h-[24px]" src={facebook} alt="facebook" />
             <img className="w-[24px] h-[24px]" src={twitter} alt="twitter" />
