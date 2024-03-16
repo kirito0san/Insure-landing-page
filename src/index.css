@@ -1,13 +1,31 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav > li {
+  @apply p-2 px-4 tracking-wider uppercase transition-all cursor-pointer hover:text-[#a48989] md:hover:text-dark-Violet;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.serves > div {
+  @apply flex flex-col items-center gap-5 text-center md:text-start md:items-start;
+}
+.serves p:nth-of-type(1) {
+  @apply text-3xl font-DMSerif;
+}
+.social > img {
+  @apply transition-all cursor-pointer hover:brightness-50;
+}
+.FooterPart > div {
+  @apply md:w-[200px] flex flex-col items-center gap-3 md:items-start;
+}
+.FooterPart > div > p:nth-of-type(1) {
+  @apply py-5 font-Karla text-Dark-Grayish-Violet;
+}
+.FooterPart > div > p:not(p:nth-of-type(1)) {
+  @apply relative font-medium cursor-pointer w-fit;
+}
+.FooterPart > div > p:not(p:nth-of-type(1)):hover::after {
+  @apply w-full;
+}
+.FooterPart > div > p:not(p:nth-of-type(1))::after {
+  @apply content-[''] absolute bottom-0 left-0 w-0 h-[1px] bg-dark-Violet transition-all;
 }
