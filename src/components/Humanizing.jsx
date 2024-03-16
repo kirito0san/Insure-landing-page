@@ -23,11 +23,7 @@ const Humanizing = () => {
         </button>
       </div>
       <img className="hidden md:block" src={MainImageP} alt="MainImageP" />
-      <img
-        className="w-full h-[451px] max-h-[500px] aspect-auto md:hidden"
-        src={MainImageM}
-        alt="MainImageM"
-      />
+      <img className="w-full h-[451px] max-h-[500px] md:hidden" src={MainImageM} alt="MainImageM" />
     </div>
   );
 };

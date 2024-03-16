@@ -1,5 +1,6 @@
 import Logo from "../assets/images/logo.svg";
 import hamburger from "../assets/images/icon-hamburger.svg";
+import navpatten from "../assets/images/bg-pattern-mobile-nav.svg";
 import { useState } from "react";
 const Header = () => {
   const [open, setopen] = useState(false);
@@ -14,10 +15,10 @@ const Header = () => {
       />
       <ul
         className={
-          "hidden transition-all gap-5 font-semibold nav md:flex  " +
+          "absolute hidden  items-center  md:text-Dark-Grayish-Violet text-white md:static md:flex-row flex-col transition-all gap-5 font-semibold nav md:flex  " +
           (open
-            ? "!flex !absolute !flex-col text-white pt-10 items-center !top-[70px] !left-0 !w-full !h-[100vh] !bg-Very-Dark-Violet z-20"
-            : "text-Dark-Grayish-Violet")
+            ? "pt-10 !flex  !top-[70px] !left-0 !w-full !h-[calc(100vh-70px)] !bg-Very-Dark-Violet z-20"
+            : " ")
         }
       >
         <li> How we work</li>
@@ -33,6 +34,9 @@ const Header = () => {
         >
           {" "}
           View plans
+        </li>
+        <li className="absolute bottom-0 right-0 w-full !p-0">
+          <img className=" w-[375px] h-[218px]" src={navpatten} alt="navpatten" />
         </li>
       </ul>
     </header>
